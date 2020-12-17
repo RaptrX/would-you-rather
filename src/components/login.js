@@ -27,7 +27,6 @@ class Login extends Component {
     const { userID, toHome } = this.state
 		const { users } = this.props
 		const { from } = this.props.location.state || { from: { pathname: '/'}}
-		const selectedUser = userID ? userID : -1
 
 		if(toHome) {
 			return <Redirect to={from} />

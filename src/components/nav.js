@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { NavLink, Link, withRouter } from 'react-router-dom'
-import { setAuthedUser, logoutUser } from '../actions/authedUser'
+import { NavLink, Link } from 'react-router-dom'
+import { logoutUser } from '../actions/authedUser'
 
 const Nav = ({ dispatch, authedUser, users }) => {
   return(
